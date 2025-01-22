@@ -56,15 +56,13 @@ a{
     justify-content: space-between;
     cursor: pointer;
     gap: 5px;
-  }
-  
+}
   .three-dot-btn span {
 
     width: 30px;
     height: 4px; 
     background-color: #000; 
-  }
-  
+}
 #enroll{
     background-color: black;
 }
@@ -90,12 +88,13 @@ a{
     padding-left: 10px;
     opacity: 0.8;
 }
-
 .curiculum{
-    background-image: url(assets/bg.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#curiculum{
+    background-image: url(assets/bg.png);
 }
 .headline-2{
     font-size: 3em;
@@ -159,6 +158,71 @@ a{
 article{
     margin-bottom: 60px;
 }
+.stories{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    padding-bottom: 60px;
+    
+    
+}
+#stories{
+    background: url('assets/bg.png'), linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgb(241, 241, 241) );
+}
+.stories-head{
+    padding: 0 0;
+    margin: 0 0;
+}
+.left{
+    height: auto;
+    width: 49%;
+    border: 1px solid rgba(255, 255, 255, 0.704);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.right{
+    height: 500px;
+    width: 49%;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    
+}
+.story-partition{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+img{
+    width: 100%;
+
+}
+.left-story-headline{
+    padding: 0 1em;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.left-story-description{
+    padding: 0 1em;
+}
+.story1{
+    border: 1px solid rgba(255, 255, 255, 0.733);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.story1-headline{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.view{
+    width: fit-content;
+    background-color: #000;
+}
 @media  screen and (max-width: 1036px) {
 
     ul, .connect{
@@ -201,8 +265,24 @@ article{
         gap: 20px;
     }
     main{
+
         width: 100%;
         margin: 0 0 ;
         padding: 0 0 ;
+    }
+    .left{
+        display: none; 
+    }
+    .right{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        height: fit-content;
+        
+    }
+    .story1{
+      height: auto;
+      cursor: pointer;
+      padding-bottom: 20px;
     }
 }
