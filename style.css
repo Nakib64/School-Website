@@ -7,10 +7,13 @@ header{
 }
 main{
     height: auto;
-    margin-bottom: 30px;
+    
 }
 footer{
     height:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0;
 }
 body{
     background: rgb(241, 241, 241);
@@ -28,6 +31,12 @@ ul{
 }
 a{
     text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+a:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 #home{
     color: rgb(254, 163, 1);
@@ -49,6 +58,11 @@ a{
     border: none;
     background-color: rgb(254, 163, 1);
     color: white;
+    transition: all 0.3s ease;
+}
+button:hover {
+    box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #0056b3;
 }
 .three-dot-btn {
     display: none;
@@ -166,7 +180,7 @@ article{
     align-items: center;
     padding-bottom: 60px;
     
-    
+    margin-bottom: 0px;
 }
 #stories{
     background: url('assets/bg.png'), linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgb(241, 241, 241) );
@@ -196,10 +210,7 @@ article{
     justify-content: center;
     gap: 1em;
 }
-img{
-    width: 100%;
 
-}
 .left-story-headline{
     padding: 0 1em;
     font-size: 1.5em;
@@ -223,6 +234,40 @@ img{
     width: fit-content;
     background-color: #000;
 }
+.footer{
+    width: 100%;
+    background-color: rgb(72, 72, 255);
+    color: rgba(255, 255, 255, 0.767);
+}
+.logo{
+    width: 83px;
+}
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 ;
+}
+.logoname{
+    display: flex;
+    align-items: center;
+}
+.logo-name{
+    font-size: 2em;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
 @media  screen and (max-width: 1036px) {
 
     ul, .connect{
@@ -284,5 +329,15 @@ img{
       height: auto;
       cursor: pointer;
       padding-bottom: 20px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 30px;
+    }
+    .logoname{
+        justify-content: center;
     }
 }
