@@ -340,4 +340,9 @@ article{
     .logoname{
         justify-content: center;
     }
+    html,body{
+        margin-right: 0 0;
+        padding: 0 0;
+        
+    }
 }
